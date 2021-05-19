@@ -1,0 +1,32 @@
+/* Variables */
+$font-header: 'Nunito', Sans-Serif;
+$font-text: 'PT Sans', Sans-Serif;
+
+/* Global */
+body {
+    background: cornsilk;
+}
+.container{
+    text-align: center;
+    padding-top: 30px;
+}
+.container h1, h2 {
+    font-family: $font-text;
+}
+.container h1 {
+    font-size: 50px;
+}
+.container h2 {
+    font-size: 40px;
+}
+.but {
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-family: $font-text;
+    font-size: 20px;
+    color:hotpink;
+    cursor: poiter;
+}
