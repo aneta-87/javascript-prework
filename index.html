@@ -19,11 +19,16 @@
 			<button id="kamien" type="button" class="but">Kamień</button>
 			<button id="nozyce" type="button" class="but">Nożyce</button>
 		</div>
-		<div id="messages">
-			<h3>Wyniki:</h3>
-			<p id="Wynik-gracza">Wynik gracza:</p>
-			<p id="Wynik-komputera">Wynik komputera:</p>
-			<h3 id="Wynik-gry">Wynik gry:</h3>
+		<div class="m-box">
+			<div id="messages">
+			</div>
+		</div>
+			<div id="result">
+					<h3>Wyniki gry:</h3>
+					<p>Twój wybór: <span data-summary="Wynik gracza:"></span></p>
+					<p>Wybór komputera: <span data-summary="Wynik komputera:"></span></p>
+					<h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
+			</div>
 		</div>
 	</div>
 	<script src="js/functions.js"></script>

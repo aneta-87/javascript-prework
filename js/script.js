@@ -30,9 +30,7 @@ function playGame(playerInput) {
     }
   }
   let randomNumber = Math.floor(Math.random() * 3 + 1);
-
   console.log('Wylosowana liczba to: ' + randomNumber);
-
   let ComputerMove = getMoveName(randomNumber);
 
   /* if(randomNumber == 1){
@@ -71,8 +69,16 @@ function playGame(playerInput) {
   function displayResult() {
     PlayerResult.innerHTML = 'Wynik gracza: ' + scores.player;
     ComputerResult.innerHTML = 'Wynik komputera: ' + scores.computer;
+
   }
 }
+function displayResult(ComputerMove, PlayerMove) {
+  let PlayerResult = document.querySelector('Wynik gracza');
+  let ComputerResult = document.querySelector('Wynik komputera');
+   document.querySelector('[data-summary="Player-choice"]').textContent = PlayerMove;
+   document.querySelector('[data-summary="Computer-choice"]').textContent = ComputerMove;
+   document.querySelector('p.numbers span').textContent = ++gameSummary.numbers;
+ }
 document.getElementById('papier').addEventListener('click', function () {
   printMessage('Kliknąłeś papier');
   playGame(2);
@@ -82,6 +88,6 @@ document.getElementById('kamien').addEventListener('click', function () {
   playGame(1);
 });
 document.getElementById('nozyce').addEventListener('click', function () {
-  printMessage('Kliknąłeś nożyce');
+  printMessage('nożyce');
   playGame(3);
 });
