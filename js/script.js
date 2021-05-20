@@ -74,14 +74,14 @@ function playGame(playerInput) {
   }
 }
 document.getElementById('papier').addEventListener('click', function () {
-  printMessage('Guzik został kliknięty');
+  printMessage('Kliknąłeś papier');
   playGame(2);
 });
 document.getElementById('kamien').addEventListener('click', function () {
-  printMessage('Guzik został kliknięty');
+  printMessage('Kliknąłeś kamień');
   playGame(1);
 });
 document.getElementById('nozyce').addEventListener('click', function () {
-  printMessage('Guzik został kliknięty');
+  printMessage('Kliknąłeś nożyce');
   playGame(3);
 });
