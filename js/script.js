@@ -1,7 +1,4 @@
 function playGame(playerInput) {
-  playGame(3) clearMessages () {
-    const playerInput = nożyce;
-  }
   function getMoveName(MoveId) {
     if (MoveId == 1) {
       return 'kamień';
@@ -51,7 +48,7 @@ function playGame(playerInput) {
   }
   printMessage('Mój ruch to: ' + computerMove);  */
 
-  let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+  /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
   console.log('Gracz wpisał: ' + playerInput);
   let PlayerMove = getMoveName(playerInput);
 
@@ -71,19 +68,20 @@ function playGame(playerInput) {
   console.log('moves:', ComputerMove, PlayerMove);
   let Result = displayResult(ComputerMove, PlayerMove);
   console.log('Wynik Gry:' + Result);
-
-  
-  document.getElementById('papier').addEventListener('click', function(2){
-    printMessage('Guzik został kliknięty');
-  });
-  document.getElementById('kamień').addEventListener('click', function(1){
-    printMessage('Guzik został kliknięty');
-  });
-  document.getElementById('nożyce').addEventListener('click', function(3){
-    printMessage('Guzik został kliknięty');
-  });
-  function displayResult(){
+  function displayResult() {
     PlayerResult.innerHTML = 'Wynik gracza: ' + scores.player;
     ComputerResult.innerHTML = 'Wynik komputera: ' + scores.computer;
+  }
 }
-playGame(3);
+document.getElementById('papier').addEventListener('click', function () {
+  printMessage('Guzik został kliknięty');
+  playGame(2);
+});
+document.getElementById('kamien').addEventListener('click', function () {
+  printMessage('Guzik został kliknięty');
+  playGame(1);
+});
+document.getElementById('nozyce').addEventListener('click', function () {
+  printMessage('Guzik został kliknięty');
+  playGame(3);
+});
