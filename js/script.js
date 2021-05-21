@@ -88,6 +88,6 @@ document.getElementById('kamien').addEventListener('click', function () {
   playGame(1);
 });
 document.getElementById('nozyce').addEventListener('click', function () {
-  printMessage('nożyce');
+  printMessage('Kliknąłeś nożyce');
   playGame(3);
 });
